@@ -1,0 +1,143 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #1a1a1a;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: block;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-width: 0;
+  border-radius: 8px;
+  padding: 0.3em 0.6em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  transition-duration: .2s;
+}
+
+button:disabled {
+  background-color: rgb(128, 128, 128);
+  cursor: default;
+  pointer-events: none;
+  color: darkgray;
+}
+
+button:hover {
+
+}
+
+button:active {
+  background-color: #4a4a4a;
+}
+
+.card {
+  padding: 2em;
+}
+
+#app {
+  margin: 0 auto;
+  text-align: center;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+
+  button{
+    color: #476582;
+    background-color: #f1f1f1;
+  }
+
+  button:hover{
+    background-color: rgb(229, 229, 229);
+  }
+
+  td {
+    border: 1px solid black;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    background-color: #1a1a1a;
+  }
+
+  h1, h2, h3, h4, h5, h6, p, textarea, input {
+    color: #ffffff;
+  }
+
+  button{
+    color: #aac8e4;
+    background-color: #2f2f2f;
+  }
+
+  button:hover{
+    background-color: #3a3a3a;
+  }
+
+  td {
+    border: 1px solid white;
+  }
+}
+
+a:hover {
+  color: #747bff;
+}
+
+td {
+  padding: 5px;
+}
+
+textarea, input[type=password], input[type=text] {
+  margin: 5px;
+  border-radius: 8px;
+  border: 1px solid rgba(84, 84, 84, .65);
+  padding: 6px 12px;
+  background-color: transparent;
+  transition: box-shadow .25s ease;
+}
+
+textarea:hover, input[type=password]:hover, input[type=text]:hover {
+  box-shadow: 0 0 4pt rgba(0, 212, 116, 0.2);
+  outline: none;
+}
+
+textarea:focus, input[type=password]:focus, input[type=text]:focus {
+  box-shadow: 0 0 4pt rgba(0, 212, 116, 0.6);
+  outline: none;
+}
